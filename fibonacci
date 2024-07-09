@@ -1,0 +1,10 @@
+n = 8
+a, b = 0, 1
+if n == 1:
+    print(a)
+else:
+    print(a, b, end=" ")
+    for _ in range(2, n):
+        c = a + b
+        print(c, end=" ")
+        a, b = b, c
