@@ -1,0 +1,11 @@
+# Sample Input
+date_input = "04/11/1947"
+
+# Extract the year from the input
+year = int(date_input.split('/')[-1])
+
+# Determine if the year is a leap year
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print("Given year is Leap Year")
+else:
+    print("Given year is Non Leap Year")
