@@ -1,0 +1,5 @@
+total_users=856
+staff_users=126
+non_teaching=staff_users//3
+student_users = total_users - staff_users - non_teaching
+print(f"student users: {student_users}")
