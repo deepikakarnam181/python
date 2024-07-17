@@ -1,0 +1,14 @@
+# Input string
+s = "the sky is blue"
+
+# Split the string into words
+words = s.split()
+
+# Reverse the order of the words
+reversed_words = words[::-1]
+
+# Join the reversed words into a single string
+reversed_s = " ".join(reversed_words)
+
+# Output the result
+print(reversed_s)
