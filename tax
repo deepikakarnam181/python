@@ -1,0 +1,23 @@
+# Input income
+income = float(input("Enter the income: "))
+
+# Calculate taxable income (income minus 1,50,000)
+taxable_income = income - 150000
+
+# Initialize tax variable
+tax = 0
+
+# Calculate tax based on taxable income ranges
+if taxable_income <= 0:
+    tax = 0
+elif taxable_income <= 150000:
+    tax = 0
+elif taxable_income <= 300000:
+    tax = taxable_income * 0.1
+elif taxable_income <= 500000:
+    tax = 15000 + (taxable_income - 300000) * 0.2
+else:
+    tax = 45000 + (taxable_income - 500000) * 0.3
+
+# Print the calculated tax
+print(int(tax))
