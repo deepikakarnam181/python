@@ -1,0 +1,16 @@
+import statistics
+
+# Sample Input
+array = [16, 18, 27, 16, 23, 21, 19]
+
+# Calculate Mean
+mean = statistics.mean(array)
+print("Mean =", mean)
+
+# Calculate Median
+median = statistics.median(array)
+print("Median =", median)
+
+# Calculate Mode
+mode = statistics.mode(array)
+print("Mode =", mode)
