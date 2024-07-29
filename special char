@@ -1,0 +1,8 @@
+string = input("Please enter a string: ")
+special = 0
+spl = []
+for char in string:
+if not char.isalnum() and not char.isspace():
+special += 1
+spl.append(char)
+print("Special characters: ", special, spl)
