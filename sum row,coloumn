@@ -1,0 +1,19 @@
+a=[[1,2,3],
+[4,5,6],
+[7,8,9]]
+rows=len(a)
+cols=len(a[0])
+for i in range(rows):
+sumrow=0
+for j in range(cols):
+sumrow+=a[i][j]
+print("sum of", str(i+1), "row", sumrow)
+for i in range(cols):
+sumcol=0
+for j in range(rows):
+sumcol+=a[j][i]
+print("sum of", str(i+1), "column", sumcol)
+sumdiagonal=0
+for i in range(rows):
+sumdiagonal+=a[i][i]
+print("sum of diagonal",sumdiagonal)
