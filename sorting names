@@ -1,0 +1,18 @@
+def sort_names(names, order):
+if order == 'ascending':
+names.sort()
+elif order == 'descending':
+names.sort(reverse=True)
+else:
+print("Invalid order specified!")
+return None
+return names
+def main():
+names = input("Enter names separated by spaces: ").split()
+order = input("Enter 'ascending' or 'descending' for sorting order:
+").lower()
+sorted_names = sort_names(names, order)
+if sorted_names is not None:
+print("Sorted names:", sorted_names)
+if __name__ == "__main__":
+main()
